@@ -6,7 +6,7 @@ cl in-scoresplit.cpp
 
 or just copy into a new solution in Visual Studio and compile from there.
 
-launch th08.exe first, then launch the program
+launch th08.exe first, then launch the program (from the command line)
 
 Pogram can be modified to write splits to a "my-best.txt" or read from it only and
 output scores from the "my-best.txt" along with your current running score as you play
