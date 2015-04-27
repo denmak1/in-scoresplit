@@ -1,0 +1,27 @@
+in base addr: 00000BE0 - th08.exe
+SCB counter:  004EA76C : offset = (+0x004E9B8C) (3 bytes long)
+
+0120F510
+
+
+
+in stuff:
+hex        thing      decimal        offset
+038CD178 = score      59560312       00000000 (need to find static addr pointer to this)
+           %complete?                         (+0x08)
+           graze                              (+0x04)
+038CD19C = PIV        59560348       00000036 (+0x18)
+           point                              (+0x0C)
+038CD1B4 = time       59560372       00000024 (+0x0C)
+038CD1BC = time
+
+high score entry:
+"th08.exe"+0120F510 from base (00000BE0)
+
+
+static addresses:
+0x004EA76C - current spell bonus (as shown in the counter ingame)
+0x004EA774 - spell cap bonus of last capped spell, reset to 0 at new stage
+0x004EA78C - ????
+0x004EBC2D - 6 bytes that change from 00 00 00 -> XX XX XX when new spell begins
+             and back when it ends
